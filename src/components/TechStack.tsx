@@ -63,7 +63,7 @@ export default function TechStack() {
     },
     {
       title: "frontend & design",
-      skills: ["react", "next.js", "tailwindcss", "figma", "vite", "shadcn/ui"]
+      skills: ["react", "next.js", "tailwindcss", "figma", "shadcn/ui"]
     },
     {
       title: "devops & tools",
@@ -118,8 +118,8 @@ export default function TechStack() {
   );
 
   return (
-    <section id="tech" className="max-w-6xl mx-auto px-4 py-24">
-      <h2 className="text-4xl font-bold mb-12">
+    <section id="tech" className="max-w-6xl mx-auto px-4 py-5">
+      <h2 className="text-4xl font-bold mb-12 mt-2">
         <span style={{ fontFamily: 'var(--font-atkinson)', fontWeight: 'bold' }}>my </span>
         <span style={{ fontFamily: 'var(--font-doto)' }}>tech stack</span>
       </h2>

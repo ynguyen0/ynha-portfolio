@@ -67,12 +67,12 @@ function TextCarousel() {
 
 export default function About() {
   return (
-    <section id="about" className="max-w-6xl mx-auto px-4 py-32 mr-30">
+    <section id="about" className="max-w-6xl mx-auto px-4 py-32 mr-30" style={{ fontFamily: 'var(--font-atkinson)' }}>
       <div className="grid grid-cols-2 gap-16 items-center justify-items-center">
         <div className="justify-self-start max-w-2xl">
           <h1 className="text-5xl mb-6 mt-10 ml-7">
-            <span style={{ fontFamily: 'var(--font-doto)', fontWeight: 'bold' }}>hello! </span>
-            <span style={{ fontFamily: 'var(--font-atkinson)' }}>i&apos;m ynha.</span>
+            <span style={{ fontWeight: 'bold', fontFamily: 'var(--font-doto)' }}>hello! </span>
+            <span>i&apos;m ynha.</span>
           </h1>
           <p className="text-[1.0625rem] mb-8 p-6 rounded-lg" style={{ color: 'var(--nav-bg)', backgroundColor: 'rgba(255, 255, 255, 0.5)', fontFamily: 'var(--font-atkinson)' }}>
             Hi! I&apos;m an MSSE student at SJSU specializing in Cloud Computing. I love designing unique interfaces and developing the systems behind them. Also familiar with deep learning, NLP, and data pipelines. Always looking for opportunities where good engineering and thoughtful design meet. ദ്ദി^ヮ^˶).ᐟ

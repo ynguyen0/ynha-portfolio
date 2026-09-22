@@ -17,8 +17,8 @@ export default function ProjectPage({ params }: Props) {
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-24">
-      <h1 className="text-3xl font-bold" style={{ fontFamily: 'var(--font-atkinson)' }}>{project.title}</h1>
+    <div className="max-w-4xl mx-auto px-4 py-24" style={{ fontFamily: '"Atkinson Hyperlegible Mono", monospace' }}>
+      <h1 className="text-3xl font-bold">{project.title}</h1>
       <p className="mt-4 text-gray-700">{project.description}</p>
 
       <div className="mt-6">
@@ -35,9 +35,11 @@ export default function ProjectPage({ params }: Props) {
         <p className="mt-2 text-gray-700">Here you can add a longer writeup about the project: goals, approach, challenges solved, architecture, and anything else you&apos;d like to showcase.</p>
       </div>
 
-      <div className="mt-8">
-        <a href={project.github} target="_blank" rel="noreferrer noopener" className="text-sm text-blue-600">View source on GitHub</a>
-      </div>
+      {project.github && (
+        <div className="mt-8">
+          <a href={project.github} target="_blank" rel="noreferrer noopener" className="text-sm text-blue-600">View source on GitHub</a>
+        </div>
+      )}
     </div>
   );
 }
