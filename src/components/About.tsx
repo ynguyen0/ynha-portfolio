@@ -78,13 +78,13 @@ export default function About() {
             Hi! I&apos;m an MSSE student at SJSU specializing in Cloud Computing. I love designing unique interfaces and developing the systems behind them. Also familiar with deep learning, NLP, and data pipelines. Always looking for opportunities where good engineering and thoughtful design meet. ദ്ദി^ヮ^˶).ᐟ
           </p>
           <div className="flex gap-8 items-center ml-12">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:opacity-70 transition" title="GitHub">
+            <a href="https://github.com/ynguyen0" target="_blank" rel="noopener noreferrer" className="text-2xl hover:opacity-70 transition" title="GitHub">
               <IconBrandGithub size={35} stroke={2} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:opacity-70 transition" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/ynha-nguyen" target="_blank" rel="noopener noreferrer" className="text-2xl hover:opacity-70 transition" title="LinkedIn">
               <IconBrandLinkedin size={35} stroke={2} />
             </a>
-            <a href="mailto:your-email@example.com" className="text-2xl hover:opacity-70 transition" title="Email">
+            <a href="mailto:ynhapnguyen@gmail.com" className="text-2xl hover:opacity-70 transition" title="Email">
               <IconMail size={35} stroke={2} />
             </a>
             <a href="/resume.pdf"

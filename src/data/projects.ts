@@ -5,6 +5,16 @@ export type Project = {
   deploy?:string;
   description: string;
   tech: string[];
+  whatImBuilding?: string;
+  howImBuilding?: string;
+  features?: string[];
+  images?: ProjectImage[];
+};
+
+export type ProjectImage = {
+  src: string;
+  alt: string;
+  caption?: string;
 };
 
 const projects: Project[] = [
@@ -12,7 +22,14 @@ const projects: Project[] = [
     slug: 'media-host',
     title: 'MediaHost',
     description: 'A media hosting platform for uploading and sharing images, GIFs, and videos.',
-    tech: ['next.js', 'react', 'node.js']
+    tech: ['next.js', 'react', 'node.js'],
+    whatImBuilding: 'MediaHost brings image, GIF, and video hosting into one simple place. The goal is to make it easy to get visual media online and share it with others.',
+    howImBuilding: 'The application is built with Next.js and React, with Node.js supporting its application logic. The experience is centered on a straightforward flow: upload a media file, then share it.',
+    features: [
+      'Upload images, GIFs, and videos.',
+      'Host visual media in one place.',
+      'Share hosted media with others.'
+    ]
   },
   {
     slug: 'fracture-detection',

@@ -1,13 +1,11 @@
 "use client";
 
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import projects, { Project } from '@/data/projects';
 import { IconBrandGithub } from '@tabler/icons-react';
 import { IconExternalLink } from '@tabler/icons-react';
 
 export default function Work() {
-  const router = useRouter();
-
   return (
     <section id="work" className="max-w-6xl mx-auto px-4 py-24" style={{ fontFamily: '"Atkinson Hyperlegible Mono", monospace' }}>
       <h2 className="text-4xl font-bold mb-8" style={{ fontFamily: 'var(--font-doto)' }}>
@@ -18,9 +16,7 @@ export default function Work() {
         {projects.map((p: Project) => (
           <div
             key={p.slug}
-            role="button"
-            onClick={() => router.push(`/projects/${p.slug}`)}
-            className="cursor-pointer rounded-lg p-6 bg-white/60 hover:shadow-lg transition-shadow duration-200"
+            className="rounded-lg p-6 bg-white/60 hover:shadow-lg transition-shadow duration-200"
           >
             <div className="flex justify-between items-start">
               <h3 className="text-xl font-semibold">{p.title}</h3>
@@ -67,16 +63,13 @@ export default function Work() {
                 ))}
               </div>
 
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  router.push(`/projects/${p.slug}`);
-                }}
+              <Link
+                href={`/projects/${p.slug}`}
                 className="text-sm text-blue-600 hover:underline"
                 aria-label={`Read more about ${p.title}`}
               >
                 Read more →
-              </button>
+              </Link>
             </div>
           </div>
         ))}
